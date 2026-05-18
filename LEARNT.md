@@ -10,4 +10,4 @@
   sin(value).mul(.5).add(.5)
   ```
 
-- **Node Materials**: Used modern NodeMaterials (`MeshBasicNodeMaterial`) from `three/webgpu` to program shader logic directly inside JavaScript using TSL nodes (like `colorNode`).
+- **Node Materials**: Learned about modern NodeMaterials (like `MeshBasicNodeMaterial`, `MeshStandardNodeMaterial`, and `MeshPhysicalNodeMaterial`) from `three/webgpu` to program shader logic directly inside JavaScript using TSL nodes (like `colorNode`, `roughnessNode`, `metalnessNode`).
