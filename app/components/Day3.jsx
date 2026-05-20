@@ -5,21 +5,13 @@ import { MeshBasicNodeMaterial, PlaneGeometry, WebGPURenderer } from "three/webg
 export default function Day2() {
 
     const material = new MeshBasicNodeMaterial()
-    // BLUR TO PINK
-    // material.colorNode = color(uv().x,0,1)
-
-    // CORNERS = YELLO , BLACK , RED , GREEN
-    // material.colorNode = color(uv().x,uv().y,0)
-
-    // SCAN LINES
     material.colorNode = color(
-        sin(time.add(uv().y).mul(16)),
-        0,
-        0.2
-    )
+  uv().sub(.5),
+  0
+)
+   
 
 
-    // color(1,2,3)
     return (
         <Canvas gl={async (props) => {
             const renderer = new WebGPURenderer(props)
