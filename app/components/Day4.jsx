@@ -10,18 +10,18 @@ export default function Day4() {
 
     // MIX used for mixing two colors, gradients , day-night transitions , interpolation etc , (a,b,t) : Where a is the first vale , b is second and t is the strength values~ is strength is .5 then a & b middle value comes
     const materialWithMix = new MeshBasicNodeMaterial()
-    const gradient = mix(color(1,0,0),color(0,0,1),time.clamp(0,1)) //With clamp it works from 0-1 and a smooth transition 
+    const gradient = mix(color(1, 0, 0), color(0, 0, 1), time.clamp(0, 1)) //With clamp it works from 0-1 and a smooth transition 
     materialWithMix.colorNode = gradient
 
 
     // SMOOTHSTEP
     const materialWithSmoothStep = new MeshBasicNodeMaterial()
     const gradientsmoothstep = smoothstep(
-  0.4,
-  1,
-  uv().x
-)
-materialWithSmoothStep.colorNode = color(gradientsmoothstep)
+        0.4,
+        1,
+        uv().x
+    )
+    materialWithSmoothStep.colorNode = color(gradientsmoothstep)
 
 
 
@@ -37,4 +37,4 @@ materialWithSmoothStep.colorNode = color(gradientsmoothstep)
             </mesh>
         </Canvas>
     )
-}
+} 
