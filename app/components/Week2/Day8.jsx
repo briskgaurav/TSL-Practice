@@ -9,8 +9,8 @@ export default function Day8() {
   const material = new MeshBasicNodeMaterial();
   const tilesUv = uv().mul(5).fract();
   const lineX = step(stepValue, tilesUv.x);
-  const LineBottom = step(stepValue, tilesUv.y.oneMinus(1));
-  const lineLeft = step(stepValue, tilesUv.x.oneMinus(1));
+  const LineBottom = step(stepValue, tilesUv.y.oneMinus());
+  const lineLeft = step(stepValue, tilesUv.x.oneMinus());
   const lineY = step(stepValue, tilesUv.y);
   const grid = lineX.add(lineY).add(lineLeft).add(LineBottom);
   material.colorNode = color(grid);

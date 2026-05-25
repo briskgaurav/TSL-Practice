@@ -6,11 +6,12 @@ import Day4 from "./components/Week1/Day4";
 import Day5 from "./components/Week1/Day5";
 import Miniproject1 from "./components/Week1/MiniProject1";
 import Day8 from '@/app/components/Week2/Day8'
+import Day9 from '@/app/components/Week2/Day9'
 
 export default function page() {
   return (
     <div className="h-screen w-full relative">
-       <Day8 />
+       <Day9 />
     </div>
   );
 }
