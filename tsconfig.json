@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "app/page.jsx", "app/components/Day1.jsx", "app/components/Day4.jsx"  ],
+, "app/page.jsx", "app/components/Week1/Day1.jsx", "app/components/Week1/Day4.jsx"  ],
   "exclude": ["node_modules"]
 }
