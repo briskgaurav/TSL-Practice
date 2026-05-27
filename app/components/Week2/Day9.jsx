@@ -1,7 +1,6 @@
 "use client";
-import { OrbitControls } from "@react-three/drei";
 import { Canvas, extend } from "@react-three/fiber";
-import { color, distance, mix, smoothstep, uv, vec3 } from "three/tsl";
+import { color, distance, mix, smoothstep, uv } from "three/tsl";
 import { MeshBasicNodeMaterial, WebGPURenderer } from "three/webgpu";
 import { RoundedPlaneGeometry } from "maath/geometry";
 extend({ RoundedPlaneGeometry });
