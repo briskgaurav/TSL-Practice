@@ -1,10 +1,10 @@
 'use client'
-import Day10 from '@/app/components/Week2/Day10'
+import Day11 from '@/app/components/Week2/Day11'
 
 export default function page() {
   return (
-    <div className="h-screen w-full relative">
-       <Day10 />
+    <div className="h-screen bg-white w-full relative">
+       <Day11 />
     </div>
   );
 }
