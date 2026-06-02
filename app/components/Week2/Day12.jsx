@@ -16,11 +16,11 @@ export default function Day12() {
     const wave2 = sin(uv().x.mul(WAVE2_AMPLITUDE).add(time).mul(TIME_MULTIPLIER))
     const wave = wave1.add(wave2)
     const finalShader = sin(uv().y.mul(FREQUENCY).add(wave)).mul(.5).add(.2)
-    material.colorNode = mix( vec3(0, 0, 0),vec3(1, 0, 0), finalShader)
+    material.colorNode = mix( vec3(0, 0, 0),vec3(1, 0, 1), finalShader)
 
     return (
         <>
-            <h1 className="absolute top-[4vw] select-none left-1/2 -translate-x-1/2 text-center text-red-700 w-full  z-999 text-[10vw] font-bold font-sans">SHADER WAVE</h1>
+            <h1 className="absolute top-[4vw] select-none left-1/2 -translate-x-1/2 text-center text-[#D500CB] w-full  z-999 text-[10vw] font-bold font-sans">SHADER WAVE</h1>
             <Canvas
                 gl={async (props) => {
                     const renderer = new WebGPURenderer(props);
